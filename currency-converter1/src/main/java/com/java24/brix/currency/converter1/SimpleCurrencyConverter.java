@@ -1,8 +1,8 @@
 package com.java24.brix.currency.converter1;
 
-import com.java24.brix.service.currency.ConverterName;
-import com.java24.brix.service.currency.Currency;
-import com.java24.brix.service.currency.CurrencyConverter;
+import com.java24.brix.service.ConverterName;
+import com.java24.brix.service.Currency;
+import com.java24.brix.service.CurrencyConverter;
 
     @ConverterName("EUR,USD Converter")
     @Currency({ "USD", "EUR"})

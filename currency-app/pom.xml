@@ -31,18 +31,12 @@
         </dependency>
     </dependencies>
 
-    <properties>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.4.1</version>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -52,9 +46,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <manifestEntries>
-                                        <Main-Class>com.java24.brix.currency.app.Main</Main-Class>
-                                    </manifestEntries>
+                                    <mainClass>com.java24.brix.currency.app.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -63,5 +55,5 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
+

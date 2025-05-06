@@ -1,4 +1,6 @@
+import com.java24.brix.service.CurrencyConverter;
+
 module currency.app {
-    requires com.java.brix.service;
-    uses com.java24.brix.service.currency.CurrencyConverter;
+    requires com.java24.brix.service;
+    uses CurrencyConverter;
 }
